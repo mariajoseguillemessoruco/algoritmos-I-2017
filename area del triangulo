@@ -1,0 +1,33 @@
+// Nombre:area del triangulo
+// Autor:maria jose guillemes soruco
+// Fecha:15/febrero/2017
+
+// Declarar librerias
+#include "stdafx.h"  //Libreria del Visual C++ stdio
+#include <iostream>  // Entrada y salida cin, cout
+#include "conio.h"   //Para manejar la entrada y getch()
+
+// Declara el teclado y el monitor como la salida y entrada estandard
+using namespace std;
+
+// El cuerpo principal del programa
+void main()
+{
+   float area,base,altura; // Declaración de variables
+   // Ingreso de datos con mensaje y solicitud de datos
+   cout<<"Ingrese base: ";//equivale a sprintf
+   cin>>base;//equivale a scanf
+   cout<<"Ingrese altura: ";
+   cin>>altura;
+   if((base<=0||altura<=0))
+   
+		 cout<<"ingresar numero positivos:";
+     else{
+           // Proceso: Calculo
+           area=(base*altura)/2;
+          // Salida de la respuesta o resultado
+          cout<<"El area es: "<<area;
+         }
+ getch(); // Detiene la pantalla
+}
+//Finaliza el cuerpo principal
